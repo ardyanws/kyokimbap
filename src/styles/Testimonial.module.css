@@ -1,0 +1,125 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10rem;
+    position: relative;
+    padding: 16px 48px;
+}
+
+.header img{
+    width: 8%;
+    height: 8%;
+}
+
+.sliderContainer {
+  max-width: 800px; /* Mengatur lebar maksimum kontainer menjadi 800 piksel */
+  margin: 0 0; /* Memusatkan kontainer secara horizontal */
+}
+
+.testimonialLeft{
+    flex: 1;
+    text-align: justify;
+}
+
+.testimonialRight{
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+}
+
+.testimonialRight .imageTestimonial{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    top: -25px;
+    left: 64rem;
+}
+
+.testimonialImage{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.testimonialImage h3{
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.testimonialImg{
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.testimonial{
+    line-height: 30px;
+}
+
+.testimonial>h5{
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+@media screen and (max-width: 767px) {
+    .header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 5rem;
+    }
+    .testimonialLeft{
+        flex: 1;
+        order: 2;
+        width: 100%;
+        text-align: center;
+    }
+    .testimonial{
+        line-height: 25px;
+    }
+    .testimonial>h2{
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .testimonial p{
+        font-size: 12px;
+    }
+    .testimonialContent{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .testimonialText{
+        order: 2;
+    }
+    .testimonialImage{
+        order: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .header img{
+        width: 15%;
+        height: 15%;
+    }
+    .testimonialImage h3{
+        font-size: 1.2rem;
+        margin-top: 10px;
+        font-weight: bold;
+    }
+    .testimonialRight{
+        display: none;
+    }
+    .testimonialRight .imageTestimonial{
+        position: absolute;
+        width: 250px;
+        height: 250px;
+        top: -50px;
+        left: 2rem;
+    }
+    
+}

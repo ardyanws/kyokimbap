@@ -1,0 +1,162 @@
+.heading{
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    padding-top: 8rem;
+}
+
+.heading>span{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+.foodCategory{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--themeRed);
+    margin-top: 30px;
+    padding: 20px 0px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    gap: 2rem;
+    width: 80%;
+    margin: auto;
+}
+
+.foodCategory button{
+    border: none;
+    outline: none;
+    padding: 7px 20px;
+    background: transparent;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.allFoodPopular img{
+    width: 60%;
+    height: 60%;
+}
+
+.foodBtnActive{
+    background: white !important;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    color: var(--themeRed) !important;
+}
+
+.allFoodPopular{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    padding-inline: 3rem;
+}
+
+.productCard{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #fde4e4;
+    text-align: center;
+    padding: 30px 40px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+
+.productCard>span{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.hargaProduk{
+    color: var(--themeRed);
+}
+
+.ProductImg{
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
+}
+
+.ProductImg:hover{
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+
+@media screen and (max-width: 767px) {
+    .foodCategory img{
+        display: none;
+    }
+    .foodCategory{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--themeRed);
+        margin-top: 30px;
+        padding: 20px 10px;
+        border-radius: 8px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
+        gap: 1rem;
+        overflow: hidden;
+        width: 300px;
+    }
+    .foodCategory button{
+    border: none;
+    outline: none;
+    padding: 7px 10px;
+    background: transparent;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    cursor: pointer;
+}
+.productCard{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #fde4e4;
+    text-align: center;
+    padding: 30px 30px;
+    cursor: pointer;
+}
+
+.productCard>span{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.imageCat{
+    width: 20px;
+}
+}
